@@ -12,6 +12,9 @@
     "react-bootstrap": "^2.7.2",
     "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0",
+    "react-google-maps": "^9.4.5",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-google": "^4.0.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
