@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
+import { InfoCard } from '../info/Info.js'
 import 'leaflet/dist/leaflet.css';
 import './Map.css'
 

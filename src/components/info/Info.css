@@ -1,0 +1,33 @@
+.info-card {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  height: 18%;
+}
+
+.info-item {
+  width: 250px;
+}
+
+.info-title {
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: left;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.info-data {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-top: 2px;
+  color: hsl(0, 0%, 17%);
+  font-weight: bold;
+  text-align: left;
+  overflow-wrap: break-word;
+}

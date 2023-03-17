@@ -3,11 +3,13 @@ import axios from "axios"
 import { useState, useEffect } from 'react'
 import { Search } from '../search/Search.js'
 import { Map } from '../map/Map.js'
+import { InfoCard } from '../info/Info.js'
 
 function App() {
   const [ipAddress, setIpAddress] = useState(null)
   const [geoLocation, setGeoLocation] = useState(null)
   const [coordinates, setCoordinates] = useState(null)
+  const [postAddress, setPostAddress] = useState(null)
 
   const handleIPAddressChange = (newIpAddress) => {
     setIpAddress(newIpAddress)
@@ -36,6 +38,7 @@ function App() {
               setGeoLocation(response.data);
               console.log(response.data)
               setCoordinates([response.data.lat, response.data.lon])
+              setPostAddress([`${response.data.city},`, ` ${response.data.zip}`])
             })
             .catch((error) => console.log(error))
         })
@@ -51,6 +54,7 @@ function App() {
           setGeoLocation(response.data);
           console.log(response.data)
           setCoordinates([response.data.lat, response.data.lon])
+          setPostAddress([`${response.data.city},`, ` ${response.data.zip}`])
         })
         .catch((error) => console.log(error))
     }
@@ -58,6 +62,7 @@ function App() {
 
   return (
     <>
+      <InfoCard ipAddress={ipAddress} postAddress={postAddress}/>
       <Search onSearch={handleIPAddressChange} />
       <Map coordinates={coordinates} />
     </>
