@@ -4,8 +4,12 @@ import 'leaflet/dist/leaflet.css';
 import './Map.css'
 
 
-export function Map() {
-  const position = [51.8053, -0.8086]
+export function Map({coordinates}) {
+  let position = [51.5074, -0.1278]
+
+  if (Array.isArray(coordinates) && coordinates.length === 2) {
+    position = coordinates;
+  }
 
   // --- (6) Create a custom marker ---
   const customIcon = new Icon({
