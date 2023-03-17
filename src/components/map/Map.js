@@ -5,8 +5,7 @@ import './Map.css'
 
 
 export function Map() {
-  // Berlin coordinates
-  const position = [51.50, -0.1]
+  const position = [51.8053, -0.8086]
 
   // --- (6) Create a custom marker ---
   const customIcon = new Icon({
