@@ -10,6 +10,8 @@ function App() {
   const [geoLocation, setGeoLocation] = useState(null)
   const [coordinates, setCoordinates] = useState(null)
   const [postAddress, setPostAddress] = useState(null)
+  const [timeZone, setTimeZone] = useState(null)
+  const [isp, setISP] = useState(null)
 
   const handleIPAddressChange = (newIpAddress) => {
     setIpAddress(newIpAddress)
@@ -39,6 +41,8 @@ function App() {
               console.log(response.data)
               setCoordinates([response.data.lat, response.data.lon])
               setPostAddress([`${response.data.city},`, ` ${response.data.zip}`])
+              setTimeZone(response.data.timezone)
+              setISP(response.data.org)
             })
             .catch((error) => console.log(error))
         })
@@ -55,6 +59,8 @@ function App() {
           console.log(response.data)
           setCoordinates([response.data.lat, response.data.lon])
           setPostAddress([`${response.data.city},`, ` ${response.data.zip}`])
+          setTimeZone(response.data.timezone)
+          setISP(response.data.org)
         })
         .catch((error) => console.log(error))
     }
@@ -62,7 +68,7 @@ function App() {
 
   return (
     <>
-      <InfoCard ipAddress={ipAddress} postAddress={postAddress}/>
+      <InfoCard ipAddress={ipAddress} postAddress={postAddress} timeZone={timeZone} isp={isp}/>
       <Search onSearch={handleIPAddressChange} />
       <Map coordinates={coordinates} />
     </>

@@ -27,7 +27,7 @@ export function Search({onSearch}) {
             placeholder="Search for any IP address or domain"
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
-            value={searchIP}
+            defaultValue={searchIP}
             onChange={(event) => setSearchIP(event.target.value)}
           />
           <Button variant="outline-secondary" type="submit" id="button-addon2">
