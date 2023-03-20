@@ -6,12 +6,13 @@
 1. No need to sign up to an API. The app uses a free API with no key needed. Note: this does course a restriction when deployed live due to free version not accepting SSH but will work fine from your local machine. 
 
 2. Cd to root
-'''
+```
 npm install
 npm start
+```
 
 3. App opens up with your IP Address and the location/information that the IP Address API provides. You can search for IP Address locations using the search bar.
-'''
+
 
 ## Image 
 
