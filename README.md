@@ -14,7 +14,7 @@ npm start
 3. App opens up with your IP Address and the location/information that the IP Address API provides. You can search for IP Address locations using the search bar.
 
 
-## Image 
+## Screenshot
 
 ![image](https://user-images.githubusercontent.com/113264125/226387233-a0b95cee-43ea-4f05-a417-5d22dbc10283.png)
 
@@ -28,10 +28,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - See their own IP address on the map on the initial page load
 - Search for any IP addresses or domains and see the key information and location
-
-### Screenshot
-
-![](./screenshot.jpg)
 
 ### Links
 
