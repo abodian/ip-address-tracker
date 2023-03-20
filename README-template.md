@@ -32,10 +32,9 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-
 ### Links
 
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://ip-geolocator.onrender.com/))
+- Live Site URL: [[Render Deployment](https://ip-geolocator.onrender.com/))]
 
 NB: due to free version API restrictions, you cannot find your IP address using the live link above. It does however work from localhost without SSL restrictions.
 
